@@ -20,7 +20,7 @@ ELEVATED_USERS_FILE = os.path.join(os.getcwd(),
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
     bot = context.bot
     if not user_id:
-        reply = "That...is a chat! baka ka omae?"
+        reply = "That...is a chat! Lawda ghus gya kya muh mei ?"
 
     elif user_id == bot.id:
         reply = "This does not work that way."
@@ -63,16 +63,16 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("This member is already a Dragon Disaster")
+        message.reply_text("He is my Boyfriend")
         return ""
 
     if user_id in DEMONS:
-        rt += "Requested HA to promote a Demon Disaster to Dragon."
+        rt += "Nothing here, keks."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote a Wolf Disaster to Dragon."
+        rt += "Nothing here, keks."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -122,16 +122,16 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested HA to deomote this Dragon to Demon"
+        rt += "Nothing here, keks"
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        message.reply_text("This user is already a Demon Disaster.")
+        message.reply_text("This user is already Boyfriend.")
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote this Wolf Disaster to Demon"
+        rt += "Nothing here, keks"
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -187,7 +187,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        message.reply_text("This user is already a Wolf Disaster.")
+        message.reply_text("This user is already My boyfriend.")
         return ""
 
     data['whitelists'].append(user_id)
@@ -248,7 +248,7 @@ def addtiger(update: Update, context: CallbackContext) -> str:
         WOLVES.remove(user_id)
 
     if user_id in TIGERS:
-        message.reply_text("This user is already a Tiger.")
+        message.reply_text("This user is already my boyfriend.")
         return ""
 
     data['tigers'].append(user_id)
@@ -338,7 +338,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DEMONS:
-        message.reply_text("Requested HA to demote this user to Civilian")
+        message.reply_text("Nothing here, keks")
         DEMONS.remove(user_id)
         data['supports'].remove(user_id)
 
@@ -525,15 +525,8 @@ def devlist(update: Update, context: CallbackContext):
 
 __help__ = f"""
 *⚠️ Notice:*
-Commands listed here only work for users with special access are mainly used for troubleshooting, debugging purposes.
-Group admins/group owners do not need these commands. 
+This is only for my Boyfriends , Lawde. 
 
- ╔ *List all special users:*
- ╠ `/dragons`*:* Lists all Dragon disasters
- ╠ `/demons`*:* Lists all Demon disasters
- ╠ `/tigers`*:* Lists all Tigers disasters
- ╠ `/wolves`*:* Lists all Wolf disasters
- ╚ `/heroes`*:* Lists all Hero Association members
 
  ╔ *Ping:*
  ╠ `/ping`*:* gets ping time of bot to telegram server
@@ -590,7 +583,7 @@ Group admins/group owners do not need these commands.
  ╠ `/sh`*:* Self explanator
  ╚ `/py`*:* Self explanatory
 
-Visit @{SUPPORT_CHAT} for more information.
+Visit Google.com for more information.
 """
 
 SUDO_HANDLER = CommandHandler(("addsudo", "adddragon"), addsudo)
