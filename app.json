@@ -1,6 +1,6 @@
 {
-      "name": "SaitamaRobot",
-      "description": "An Anime themed Telegram group management bot.",
+      "name": "FlameFox bot",
+      "description": "Telegram group management bot.",
       "keywords": [
          "telegram",
          "anime",
@@ -8,7 +8,7 @@
          "manager",
          "Saitama"
       ],   
-   "repository": "https://github.com/AnimeKaizoku/SaitamaRobot",
+   "repository": "https://github.com/Userbot007/SaitamaRobot",
    "addons": [
       {
          "options": {
