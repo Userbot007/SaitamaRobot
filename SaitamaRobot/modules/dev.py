@@ -49,7 +49,7 @@ def gitpull(update: Update, context: CallbackContext):
 @dev_plus
 def restart(update: Update, context: CallbackContext):
     update.effective_message.reply_text(
-        "Starting a new instance and shutting down this one")
+        "Ok I'm gonna take a nap and will come later")
 
     os.system('restart.bat')
     os.execv('start.bat', sys.argv)
