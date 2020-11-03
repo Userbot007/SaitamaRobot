@@ -115,7 +115,7 @@ def sudo_plus(func):
             update.effective_message.delete()
         else:
             update.effective_message.reply_text(
-                "Who dis non-admin telling me what to do? You want a punch?")
+                "Bruh....Seriously?")
 
     return is_sudo_plus_func
 
@@ -150,7 +150,7 @@ def whitelist_plus(func):
             return func(update, context, *args, **kwargs)
         else:
             update.effective_message.reply_text(
-                f"You don't have access to use this.\nVisit @{SUPPORT_CHAT}")
+                f"You don't have access to use this.")
 
     return is_whitelist_plus_func
 
@@ -171,7 +171,7 @@ def user_admin(func):
             update.effective_message.delete()
         else:
             update.effective_message.reply_text(
-                "Who dis non-admin telling me what to do? You want a punch?")
+                "Seriously?")
 
     return is_admin
 
