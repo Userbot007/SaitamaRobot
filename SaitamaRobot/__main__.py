@@ -53,12 +53,12 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I can handle your groups very well cause I have a hot figure, and u bois love bhabhi!!.
+I can handle your groups very well cause I have a hot figure, and u bois loves me !!.
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-Do you want a B job ??
+Here is the help module ..
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -75,7 +75,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/4efec741761b6c4f1a31e.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/e89f39c1af4f16243d451.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 I'm running on heroku and don't need any donation."""
